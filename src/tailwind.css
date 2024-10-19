@@ -1,0 +1,60 @@
+/* tailwind.css */
+.menu {
+    transition: transform 0.3s ease-in-out;
+  }
+  .menu.hidden {
+    transform: translateX(100%);
+  }
+  .menu.open {
+    transform: translateX(0);
+  }
+  .chapter-reading-page {
+    padding-top: 4rem; /* Ajuste para a navbar */
+  }
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  .menu-button {
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    color: white;
+  }
+  .chapter-navigation button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    color: white;
+  }
+  .image-display.fill img {
+    width: 100%;
+    height: 100%;
+  }
+  .image-display.fit-width img {
+    width: 100%;
+    height: auto;
+  }
+  .image-display.fit-height img {
+    height: 100%;
+    width: auto;
+  }
+  .image-display.none img {
+    max-width: none;
+    max-height: none;
+  }  
+.chapter-reading-page {
+  @apply flex flex-col items-center bg-gray-900 min-h-screen;
+}
+
+.navigation-buttons {
+  @apply flex justify-between items-center w-full px-4 py-2 bg-gray-800 text-white fixed top-0;
+}
+
+.page-image-container {
+  @apply mt-16 flex justify-center items-center w-full max-w-screen-lg;
+}
+
+.page-image {
+  @apply object-contain max-h-screen w-full;
+}
